@@ -1,0 +1,21 @@
+@import "tailwindcss";
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+}
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 2px solid lightgray;
+  border-top: 2px solid rgb(69, 69, 184);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 100px auto;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
